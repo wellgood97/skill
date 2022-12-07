@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hover PF</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <script>    
+        var sweet = document.getElementById('sweet');
+        var parallax = new Parallax(sweet);
+	</script>
+</head>
+<body>
+    <div class="sweet">
+        <li data-depth-y="2">S</li>
+        <li data-depth-y="-6">W</li>
+        <li data-depth-y="5">E</li>
+        <li data-depth-y="-8">E</li>
+        <li data-depth-y="2">T</li>
+    </div>
+    <body>
+        <app-root></app-root>
+    </body>
+    <parallax></parallax>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+
+        *{margin: 0; padding: 0; box-sizing: border-box;}
+        body{width: 100%; height: 100vh; background: skyblue; display: flex; justify-content: center; align-items: center;}
+        .sweet{display: flex !important; align-items: center; justify-content: center; list-style: none; font-size: 200px; font-family: 'Nanum Pen Script', cursive; color: white;}
+        .sweet li{height: 100%; position: absolute; display: flex !important; position: relative; z-index: 100; display: inline-block;}
+        .sweet li{text-shadow: 1px 1px 0 #e1e1e1,2px 2px 0 #e1e1e1,3px 3px 0 #e1e1e1,4px 4px 0 #e1e1e1,5px 5px 0 #e1e1e1,25px 35px 0px rgba(0,0,0,0.1);}
+    </style>
+</body>
+</html>

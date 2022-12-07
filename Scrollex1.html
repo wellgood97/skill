@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll Top and Botton</title>
+</head>
+<body>
+    <div class="box">
+        <img src="image/webpage.jpg" alt="window11">
+    </div>
+</body>
+<style>
+    *{margin: 0; padding: 0; box-sizing: border-box;}
+    body{display: flex; align-items: center; justify-content: center; min-height: 100vh; background: #212f48;}
+    .box{width: 600px; height: 400px; background: #000; overflow: hidden; border-radius: 3%;}
+    .box:hover{ box-shadow: 0 0 5px skyblue, 0 0 10px skyblue, 0 0 50px skyblue, 0 0 200px skyblue; border: 5px solid steelblue;}
+    .box img{width: 100%; transition: 15s linear;}
+    .box:hover img{transform: translateY(calc(-100% + 400px));}
+</style>
+</html>
